@@ -1,0 +1,698 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================= Start Navbar ============================  */
+body{
+    font-family: sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: #60370911;
+}
+
+.logo{
+    width: 70px;
+    margin-left: 120px;
+    margin-top: 14px;
+}
+
+ul{
+    float: right;
+}
+
+li{
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #F9C06A;
+    padding: 6px;
+}
+
+ul li a:hover{
+    color: #603809;
+}
+
+.signUp{
+    background-color: #F9C06A;
+    padding: 14px;
+    border-radius: 20px;
+    margin-right: 80px;
+}
+
+.signUp a{
+    color: black;
+    font-weight: bold;
+}
+
+.signUp a:hover{
+    color: #985b4a; 
+    border-radius: 28px;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+/* ============================= End Navbar ============================  */
+
+/* ============================= Start Header ============================  */
+.header{
+    background-image: url(../images/coffee_image.png);   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(96, 56, 9, 0.3);
+}
+
+.Coffee{
+    width: 50%;
+    }
+    
+.cup{
+        padding-top: 180px;
+        width: 380px;
+}
+
+.text p {
+    color: white;
+    font-size: 28px;
+    padding-top: 20px;
+    width: 44%;
+    margin-left: 50px;
+    line-height: 1.4;
+}
+
+.btn{
+    width: 50%;
+}
+
+.btn button{
+    padding: 16px 28px;
+    margin-top: 60px;
+    margin-bottom: 24px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    color: black;
+    background-color: #F9C06A;
+    cursor: pointer;
+}
+/* ============================= End Header ============================  */
+
+/* ============================= Start Services ============================  */
+.services{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.textServices h1 {
+    color: #603809;
+    margin-top: 80px;
+    font-size: 40px;
+}
+
+.textServices p {
+    color: #603809;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.line {
+    width: 120px;
+    height: 4px;
+    background-color: grey;
+    margin: auto;
+}
+
+.cont2 {
+    margin: 0 5%;
+}
+
+.container{
+    width: 30%;
+    float: left; 
+    margin-top: 40px;
+    padding: 40px;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: #f9c06a29;
+    position: relative;
+}
+
+.container h1{
+    color: #603809;
+
+}
+
+.container p{
+    width: 80%;
+    margin: 20px auto;
+    color: #707070;
+    font-size: 24px;
+}
+
+.container i{
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+    
+    top: 0;
+    left: 0;
+    
+    background-color: #f9e6cc;
+    opacity: 0;
+}
+
+.container:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    transition: 1s;
+}
+
+/* ============================= End Services ============================  */
+
+.coffee_blast{
+    width: 360px;
+}
+
+.coffeeBlast{
+    overflow: hidden;
+}
+
+.coffeeBlast img{
+    width: 360px;
+    float: right;
+}
+
+/* ============================= Start Products ============================  */
+.products{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.coffeProducts img{
+    width: 100%;
+}
+
+
+.coffeProducts h1{
+    color: #603809;
+    margin-top: 25px;
+    opacity: 0;
+}
+
+.coffeProducts h2{
+    color: #603809;
+}
+
+
+.coffeProducts p{
+    margin: 20px 0;
+    color: #707070;
+    
+}
+
+.containerProducts{
+    overflow: hidden;
+}
+
+.coffeProducts{
+    width: 30%;
+    float: left; 
+    margin-top: 40px;
+    padding: 40px;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: #f9c06a29;
+    position:relative;
+}
+
+.orderBtn{
+    padding: 16px 28px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    color: black;
+    background-color: #F9C06A;  
+}
+
+.overlayProducts{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F9C06A;
+    opacity: .7;
+    visibility: hidden;
+}
+
+.imgProducts{
+    position: relative;
+}
+
+.coffeProducts:hover .overlayProducts{
+    visibility: visible;
+}
+
+.coffeProducts::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    
+    top: 0;
+    left: 0;
+    
+    background-color: #a97123;
+    opacity: 0;
+
+    border-radius: 19px;
+}
+
+.coffeProducts:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: 1s;
+}
+
+.coffeProducts:hover .overlayProducts h1{
+    opacity: 1;
+    transition: 3s;
+}
+
+/* ============================= End Products ============================  */
+
+/* ============================= Start statistics ============================  */
+.statistics{
+    background-image: url(../images/coffee_image3.png);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.textStatistics{
+    text-align: center;
+    float: left;
+    width: 25%;
+    margin-top: 100px;
+}
+
+.textStatistics i{
+    font-size: 60px;
+    color: #603809;
+}
+
+.textStatistics h1{
+    margin: 10px 0;
+    color: #603809;
+}
+
+.textStatistics h2{
+    color: #603809;   
+}
+
+.overlay2{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* ============================= End statistics ============================  */
+
+/* ============================= Start Prices ============================  */
+.ourPrices{
+    text-align: center;
+}
+.headline {
+    color: #603809;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 16px;
+}
+
+.prices {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.textPrices {
+    text-align: center;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 30px;
+    float: left;
+    padding: 30px 0;
+    background-color: #f9c06a29;
+    position: relative;
+}
+
+.highlite {
+    color: #603809;
+}
+
+.textPrices h2 {
+    margin: 20px;
+    color: #603809;
+}
+
+.discount {
+    background-color: #F9C06A;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.discount h1{
+    margin-top: 35px;
+}
+
+.textPrices button {
+    padding: 20px 50px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #F9C06A; 
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.textPrices::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+    
+    top: 0;
+    left: 0;
+    
+    background-color: #f9e6cc;
+    opacity: 0;
+}
+
+.textPrices:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    transition: 1s;
+    border-radius: 30px;
+}
+
+.textPrices:hover .highlite{
+    color: black;
+}
+
+/* ============================= End Prices ============================  */
+
+/* ============================= Start Discover ============================  */
+.discover{
+    width: 85%;
+    margin: auto;
+    margin-top: 120px;
+    overflow: auto;
+}
+
+.textDiscover{
+    width: 45%;
+    float: left;
+}
+.imgDiscover{
+    width: 45%;
+    float: left;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.circle{
+    margin-top: 10px;
+}
+
+.circle p{
+    padding: 8PX;
+    border-radius: 50%;
+    background-color: #603809;
+    display: inline-block;
+}
+
+.circle-p{
+    margin: 0 2%;
+}
+
+.textDiscover i{
+    font-size: 20px;
+    color: #a97123;
+}
+
+.textDiscover h1 {
+    color: #603809;
+    font-size: 40px;
+}
+
+
+.textDiscover p {
+    font-size: 18px;
+    margin-top: 16px;
+    color: #707070;
+    display: inline-block;
+}
+
+.btnDiscover{
+    padding: 16px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    color: black;
+    background-color: #F9C06A;
+    margin-top: 30px;
+    cursor: pointer;
+}
+/* ============================= End Discover ============================  */
+
+/* ============================= Start Customer ============================  */
+.customer{
+    background-image: url(../images/customer.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    margin-top: 120px;
+    padding-top: 10px;
+}
+
+.contCustomer{
+    width: 80%;
+    margin: auto;
+}
+
+.contCustomer h1{
+    color: #707070;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 24px;
+}
+
+.containerCustomer{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 38px;
+}
+
+.containerCustomer p{
+    font-size: 20px;
+    margin-top: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.imgCustomer{
+    overflow: auto;
+}
+
+.imgCustomer img{
+    width: 120px;
+    border-radius: 50%;
+    float: left;
+}
+
+.textCustomer{
+    float: left;
+    margin-left: 18px;
+}
+
+.textCustomer h1{
+    color: #a97123;
+    font-size: 26px;
+}
+
+.textCustomer h2{
+    color:#a97123;
+    font-size: 20px;
+    margin-left: 26px;
+}
+
+/* ============================= End Customer ============================  */
+
+/* ============================= Start Team ============================  */
+.ourTeam{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.team{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.textTeam{
+    background-color: rgb(220, 216, 216);
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 16px;
+    position: relative;
+}
+
+.textTeam img {
+    width: 100%;
+    height: 240px;
+}
+
+.textTeam h1{
+    margin: 10px 0;
+    color: #603809;
+    font-size: 28px;
+}
+
+.textTeam h2{
+    margin: 10px 0;
+    color:#a97123;
+    font-size: 20px;
+}
+
+.overlayTeam{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F9C06A;
+    opacity: .7;
+    visibility: hidden;
+}
+
+.textTeam:hover .overlayTeam{
+    visibility: visible;
+}
+
+.imgTeam{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.overlayTeam i{
+    font-size: 30px;
+    color: white;
+}
+
+.overlayTeam a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #603809;
+    margin-left: auto;
+}
+
+.textTeam::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+    
+    top: 0;
+    left: 0;
+    
+    background-color: #f9e6cc;
+    opacity: 0;
+}
+
+.textTeam:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: 1s;
+}
+/* ============================= End Team ============================  */
+
+/* ============================= Start Footer ============================  */
+.footer{
+    background-image: url(../images/bgfooter.png);   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.footer img{
+    margin-top: 60px;
+    width: 240px;
+    border-radius: 20PX;
+}
+
+.iconFooter i{
+    color: #F9C06A;
+    font-size: 50px;
+    margin: 20px;
+    margin-top: 38px;
+}
+
+.footer p{
+    color: #F9C06A;
+    font-size: 24px;
+    margin-top: 28px;
+}
+/* ============================= End Footer ============================  */
